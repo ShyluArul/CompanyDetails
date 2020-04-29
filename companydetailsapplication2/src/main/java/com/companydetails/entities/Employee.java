@@ -16,54 +16,64 @@ public class Employee {
 	public String employeeAddress;
 	public String employeeDepartment;
 	public double employeeSalary;
-	
+
 	public Long getEmployeeId() {
 		return employeeId;
 	}
-    public void setEmployeeId(Long employeeId) {
+
+	public void setEmployeeId(Long employeeId) {
 		this.employeeId = employeeId;
 	}
-    public String getEmployeeName() {
+
+	public String getEmployeeName() {
 		return employeeName;
 	}
-    public void setEmployeeName(String employeeName) {
+
+	public void setEmployeeName(String employeeName) {
 		this.employeeName = employeeName;
 	}
-    public String getEmployeeAddress() {
+
+	public String getEmployeeAddress() {
 		return employeeAddress;
 	}
-    public void setEmployeeAddress(String employeeAddress) {
+
+	public void setEmployeeAddress(String employeeAddress) {
 		this.employeeAddress = employeeAddress;
 	}
-    public String getEmployeeDepartment() {
+
+	public String getEmployeeDepartment() {
 		return employeeDepartment;
 	}
-    public void setEmployeeDepartment(String employeeDepartment) {
+
+	public void setEmployeeDepartment(String employeeDepartment) {
 		this.employeeDepartment = employeeDepartment;
 	}
-    public double getEmployeeSalary() {
+
+	public double getEmployeeSalary() {
 		return employeeSalary;
 	}
-    public void setEmployeeSalary(double employeeSalary) {
+
+	public void setEmployeeSalary(double employeeSalary) {
 		this.employeeSalary = employeeSalary;
 	}
-    
-    public Employee(String employeeName, String employeeAddress, String employeeDepartment, double employeeSalary) {
+
+	public Employee(String employeeName, String employeeAddress, String employeeDepartment, double employeeSalary) {
 		super();
 		this.employeeName = employeeName;
 		this.employeeAddress = employeeAddress;
 		this.employeeDepartment = employeeDepartment;
 		this.employeeSalary = employeeSalary;
-		}
-    public Employee() {
+	}
+
+	public Employee() {
 		super();
 	}
-    @Override
+
+	@Override
 	public String toString() {
 		return "Employee [employeeId=" + employeeId + ", employeeName=" + employeeName + ", employeeAddress="
 				+ employeeAddress + ", employeeDepartment=" + employeeDepartment + ", employeeSalary=" + employeeSalary
 				+ "]";
 	}
 
-	
 }

@@ -1,11 +1,15 @@
 package com.companydetails.service;
 
 import java.util.List;
-import java.util.Optional;
-
 import com.companydetails.entities.Employee;
 
 public interface EmployeeService {
-	public Optional<Employee> findByemployeeId(Long id);
-	public List<Employee> getGreateremployeeSalary(double employeeSalary);
+
+	public List<Employee> getAllEmployees();
+
+	public Employee findByEmployeeId(Long employeeId);
+
+	public Employee findByEmployeeName(String employeeName);
+
+	public List<Employee> getByEmployeeSalary(double employeeSalary);
 }

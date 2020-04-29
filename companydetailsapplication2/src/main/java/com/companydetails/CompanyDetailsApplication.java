@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.companydetails.entities.Employee;
 import com.companydetails.repository.EmployeeRepository;
 
 @SpringBootApplication
@@ -13,9 +11,11 @@ public class CompanyDetailsApplication implements CommandLineRunner {
 	public static void main(String[] args) {
 		SpringApplication.run(CompanyDetailsApplication.class, args);
 	}
-    @Autowired
+
+	@Autowired
 	private EmployeeRepository employeeRepository;
-    @Override
+
+	@Override
 	public void run(String... args) throws Exception {
 		/*
 		 * Employee e1 = new Employee("Manoj", "Chennai", "sales", 9000); Employee e2 =
